@@ -10,12 +10,6 @@
 <script>
     // check if Service Worker support exists in browser or not
     if ('serviceWorker' in navigator) {
-
-
-        navigator.serviceWorker.register('sw2.js').then(function () {
-            console.log('-->>Service woker registed 2')
-        })
-
         navigator.serviceWorker.register('sw.js', {scope: ''}).then(function () {
             console.log('Service woker registed')
         })
@@ -26,9 +20,7 @@
     document.getElementById("b1").onclick = function () {
         fetch('data.json')
     }
-    // setTimeout(function () {
-    //     fetch('data.json')
-    // }, 1000 * 3)
+
 </script>
 </body>
 </html>
