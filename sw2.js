@@ -1,3 +1,3 @@
 self.addEventListener("fetch", function (event) {
-    console.log('>>>>> fetch listner test.')
+    console.log(event.request)
 })
