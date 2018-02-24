@@ -10,13 +10,13 @@
     if ('serviceWorker' in navigator) {
 
 
-        navigator.serviceWorker.register('sw2.js', {scope: ''}).then(function () {
+        navigator.serviceWorker.register('sw2.js').then(function () {
             console.log('-->>Service woker registed 2')
         })
 
-        // navigator.serviceWorker.register('sw.js', {scope: ''}).then(function () {
-        //     console.log('Service woker registed')
-        // })
+        navigator.serviceWorker.register('sw.js', {scope: ''}).then(function () {
+            console.log('Service woker registed')
+        })
     } else {
         console.log('do not support service worker')
     }
