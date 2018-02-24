@@ -6,7 +6,7 @@
 </head>
 <body>
 <h2>Test</h2>
-<button>Fetch</button>
+<button id="b1">Fetch</button>
 <script>
     // check if Service Worker support exists in browser or not
     if ('serviceWorker' in navigator) {
@@ -23,6 +23,9 @@
         console.log('do not support service worker')
     }
 
+    document.getElementById("test").onclick = function () {
+        fetch('data.json')
+    }
     // setTimeout(function () {
     //     fetch('data.json')
     // }, 1000 * 3)
