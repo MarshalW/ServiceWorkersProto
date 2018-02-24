@@ -5,6 +5,15 @@
     <title>Service Workers Proto</title>
 </head>
 <body>
-
+<script>
+    // check if Service Worker support exists in browser or not
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js', {scope: ''}).then(function () {
+            console.log('Service woker registed')
+        })
+    } else {
+        console.log('do not support service worker')
+    }
+</script>
 </body>
 </html>
