@@ -1,3 +1,3 @@
 self.addEventListener("fetch", function (event) {
-    console.log(">>> I am listen it")
+    console.log(event.request)
 })
