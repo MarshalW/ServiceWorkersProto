@@ -5,6 +5,8 @@
     <title>Service Workers Proto</title>
 </head>
 <body>
+<h2>Test</h2>
+<button>Fetch</button>
 <script>
     // check if Service Worker support exists in browser or not
     if ('serviceWorker' in navigator) {
@@ -21,9 +23,9 @@
         console.log('do not support service worker')
     }
 
-    setTimeout(function () {
-        fetch('data.json')
-    }, 1000 * 3)
+    // setTimeout(function () {
+    //     fetch('data.json')
+    // }, 1000 * 3)
 </script>
 </body>
 </html>
