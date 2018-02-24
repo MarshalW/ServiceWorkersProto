@@ -14,6 +14,10 @@
     } else {
         console.log('do not support service worker')
     }
+
+    setTimeout(function () {
+        fetch('data.json')
+    }, 1000 * 3)
 </script>
 </body>
 </html>
