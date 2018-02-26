@@ -1,0 +1,1 @@
+console.log('run worker ... ok!')
