@@ -6,3 +6,7 @@ self.addEventListener("fetch", function (event) {
 self.addEventListener('install', event => {
     console.log('>>>service worker install !!!')
 })
+
+self.addEventListener('activate', event => {
+    console.log('===>>service worker activated !!!')
+})
