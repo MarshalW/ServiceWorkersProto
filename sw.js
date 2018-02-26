@@ -5,7 +5,7 @@ self.addEventListener("fetch", function (event) {
 
 self.addEventListener('install', event => {
     event.waitUntil(
-        new Promise().then(
+        Promise.resolve([1]).then(
             () =>
                 console.log('install wait until ..ok')
         )
