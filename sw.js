@@ -4,6 +4,12 @@ self.addEventListener("fetch", function (event) {
 })
 
 self.addEventListener('install', event => {
+    event.waitUntil(
+        new Promise().then(
+            () =>
+                console.log('install wait until ..ok')
+        )
+    )
     console.log('>>>service worker install !!!')
 })
 
