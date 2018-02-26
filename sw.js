@@ -10,7 +10,7 @@ self.addEventListener('install', event => {
                 console.log('install wait until ..ok')
         )
     )
-    console.log('>>>service worker install !!!')
+    console.log('=======>>>service worker install !!!')
 })
 
 self.addEventListener('activate', event => {
